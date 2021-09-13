@@ -1,0 +1,4 @@
+Optimizing Grouped Spatial Park Convolutions on Edge CPUs
+Convolutional Neural Networks (CNNs) are commonly used in many applications across computer vision and beyond.​
+However their most expensive layer, the eponymous "convolutional layer" has high costs in both memory footprint and inference time​.
+Replacing the convolutional layer with cheaper alternatives can reduce costs, at a modest cost in accuracy, such as "grouped convolutions", where the number of groups is the factor by which costs are reduced.  In this work we realise the potential of this compression technique, with a novel algorithmic primitive called "grouped spatial pack convolutions".  We reduce the costs on an ARM CPU by 8x and 4x on PyTorch and TFLite respectively.
